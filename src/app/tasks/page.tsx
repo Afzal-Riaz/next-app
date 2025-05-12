@@ -1,12 +1,12 @@
 import React from "react";
-import TaskCreator from "./components/allTask";
+import AllTask from "./components/allTask";
 
 
 const TaskPage =()=> {
     return(
         <main className="bg-[#191919]">
 
-            <TaskCreator />
+            <AllTask />
 
         </main>
     );

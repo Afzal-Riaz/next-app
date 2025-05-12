@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 
 export default function TeamPage() {
   const [teamName, setTeamName] = useState('');
@@ -29,6 +30,12 @@ export default function TeamPage() {
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-[#191919]">
+      <div className='p-2 text-[#ffffffcf] hover:underline '>
+        <Link 
+        href="/tasks" >
+          All Tasks
+        </Link>
+      </div>
       <h1 className="text-3xl font-bold mb-6 text-center text-[#ffffffcf]">Team Creation & Join</h1>
 
       <div className="bg-[#191919] shadow-md p-4 rounded mb-6">
